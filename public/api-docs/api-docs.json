@@ -1,0 +1,447 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API Pague Fácil",
+        "version": "1.0"
+    },
+    "paths": {
+        "/auth/customer/register": {
+            "post": {
+                "tags": [
+                    "Clientes"
+                ],
+                "summary": "Registro público de clientes",
+                "description": "Retorna a coleção de dados do cliente registrado",
+                "operationId": "bcc02973c50b2eb03d8efe1b2055c6c7",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/auth/customer": {
+            "post": {
+                "tags": [
+                    "Clientes"
+                ],
+                "summary": "Autênticação do cliente",
+                "description": "Retorna o token de acesso",
+                "operationId": "5a0ecf4a2aa28bb591fc3713c0a6beb4",
+                "responses": {
+                    "200": {
+                        "description": "clientes"
+                    }
+                }
+            }
+        },
+        "/auth/customer/logout": {
+            "post": {
+                "tags": [
+                    "Clientes"
+                ],
+                "summary": "Logout do cliente",
+                "description": "Retorna a mensagem ao usuário",
+                "operationId": "878376343cc22b40de11b99055ab887c",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/card": {
+            "get": {
+                "tags": [
+                    "Cartões"
+                ],
+                "summary": "Lista os cartões",
+                "description": "Retorna a coleção dos cartões",
+                "operationId": "049100137889d51f923412941bdc1ec8",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Cartões"
+                ],
+                "summary": "Criação de cartão",
+                "description": "Retorna a coleção do cartão criado",
+                "operationId": "679e7a5d95d4ac4a19cb67ebeb16c58c",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/card/{card_id}": {
+            "get": {
+                "tags": [
+                    "Cartões"
+                ],
+                "summary": "Lista um cartão",
+                "description": "Retorna a coleção de um cartão",
+                "operationId": "74c0b2d64c4e36d5e8bf0597fac7d978",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Cartões"
+                ],
+                "summary": "Atualiza um cartão",
+                "description": "Retorna a coleção de um cartão",
+                "operationId": "d17fa80ec7168d4eca5e3197c28957b9",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/cartao/{card_id}": {
+            "delete": {
+                "tags": [
+                    "Cartões"
+                ],
+                "summary": "Exclui um cartão",
+                "description": "Retorna a coleção de uma cartão",
+                "operationId": "963bcd516b5a3859484330341e9315f2",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/citie": {
+            "get": {
+                "tags": [
+                    "Cidades"
+                ],
+                "summary": "Lista as cidades",
+                "description": "Retorna a coleção de uma cidades",
+                "operationId": "338b9f0e823c05b1e6cb4804d2966dad",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Cidades"
+                ],
+                "summary": "Criação de cidade",
+                "description": "Retorna a coleção de uma cidades criada",
+                "operationId": "b9bd77b1db79e315c851e920820a3505",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/citie/{citie_id}": {
+            "get": {
+                "tags": [
+                    "Cidades"
+                ],
+                "summary": "Lista uma cidade",
+                "description": "Retorna a coleção de uma cidade",
+                "operationId": "4eed301994ccbc56b1627de9616da91f",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Cidades"
+                ],
+                "summary": "Atualiza uma cidade",
+                "description": "Retorna a coleção de uma cidade",
+                "operationId": "7d2e9137f8515f5ba0fedcf05e21b557",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Cidades"
+                ],
+                "summary": "Exclui um cidade",
+                "description": "Retorna a coleção de uma cidades",
+                "operationId": "5f92b025f54c9d2d10e3cf2b98f442e6",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/countrie": {
+            "get": {
+                "tags": [
+                    "Paises"
+                ],
+                "summary": "Lista os paises",
+                "description": "Retorna a coleção de paises",
+                "operationId": "70ae2dc6a61fed80fa94d06d83fe3727",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Paises"
+                ],
+                "summary": "Criação de pais",
+                "description": "Retorna a coleção do pais criado",
+                "operationId": "de84bf877026b6324fc71356eead1b32",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/countrie/{countrie_id}": {
+            "get": {
+                "tags": [
+                    "Paises"
+                ],
+                "summary": "Lista um pais",
+                "description": "Retorna a coleção do pais",
+                "operationId": "ce78b9cba3e6788f44b5a920e434a68f",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Paises"
+                ],
+                "summary": "Atualiza um pais",
+                "description": "Retorna a coleção do pais",
+                "operationId": "0259b60f3f264414260b8912c3b0cb9c",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Paises"
+                ],
+                "summary": "Exclui um pais",
+                "description": "Retorna a coleção do pais",
+                "operationId": "47b7069eb6b689c36be503e2ec356792",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/customer": {
+            "get": {
+                "tags": [
+                    "Clientes"
+                ],
+                "summary": "Lista os clientes",
+                "description": "Retorna a coleção de clientes",
+                "operationId": "291854f9a0af9ae304f5bfc72eddcb5b",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Clientes"
+                ],
+                "summary": "Criação de cliente",
+                "description": "Retorna a coleção do cliente criado",
+                "operationId": "ec073ce976f08c86ac12ec3910695389",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/customer/{customer_id}": {
+            "get": {
+                "tags": [
+                    "Clientes"
+                ],
+                "summary": "Lista um cliente",
+                "description": "Retorna a coleção do cliente",
+                "operationId": "cd9b6aba890b5eeda1b28aad3beb7d92",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Clientes"
+                ],
+                "summary": "Atualiza um cliente",
+                "description": "Retorna a coleção do cliente",
+                "operationId": "b9be977ca69bbdf53213966adf948948",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Clientes"
+                ],
+                "summary": "Exclui um cliente",
+                "description": "Retorna a coleção do cliente",
+                "operationId": "be301c141f70b5f7fe147af1e856ffaa",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/customer/me": {
+            "get": {
+                "tags": [
+                    "Clientes"
+                ],
+                "summary": "Lista os dados do cliente autênticado",
+                "description": "Retorna a coleção do cliente",
+                "operationId": "40c55f736066bc49c3b7cc1a27af81fa",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Clientes"
+                ],
+                "summary": "Atualiza os dados do cliente autênticado",
+                "description": "Retorna a coleção do cliente",
+                "operationId": "311cf670ab94dcc83f1ec71b3da94b14",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/customer/me/credential": {
+            "put": {
+                "tags": [
+                    "Clientes"
+                ],
+                "summary": "Atualiza os dados de acesso do cliente autênticado",
+                "description": "Retorna a coleção do cliente",
+                "operationId": "d712d09d4342cb4c3b6f372e04e2937b",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/state": {
+            "get": {
+                "tags": [
+                    "Estados"
+                ],
+                "summary": "Lista os estados",
+                "description": "Retorna a coleção de estados",
+                "operationId": "2ec64a9a536e5dc57ddebd3bec4c65a2",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Estados"
+                ],
+                "summary": "Criação de estado",
+                "description": "Retorna a coleção do estado criado",
+                "operationId": "a8cca43e2f735e700bc2c3264c54f677",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/state/{state_id}": {
+            "get": {
+                "tags": [
+                    "Estados"
+                ],
+                "summary": "Lista um estado",
+                "description": "Retorna a coleção do estado",
+                "operationId": "22a8155891d11b0a0143f4f302255e1d",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Estados"
+                ],
+                "summary": "Atualiza um estado",
+                "description": "Retorna a coleção do estado",
+                "operationId": "b1523b0cc67a579c3a4e560ac3b07eca",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Estados"
+                ],
+                "summary": "Exclui um estado",
+                "description": "Retorna a coleção do estado",
+                "operationId": "042d05d09a2c95bc213ff879f03d4f57",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        }
+    },
+    "security": [
+        []
+    ]
+}

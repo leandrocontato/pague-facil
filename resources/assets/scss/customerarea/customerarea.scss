@@ -1,0 +1,27 @@
+@import '../core/core';
+
+.icon-visa {
+	padding-right: 25px;
+    background: url("/img/card-visa.png") no-repeat center right 15px;
+    background-size: 32px;
+}
+.icon-master {
+	padding-right: 25px;
+    background: url("/img/card-master.png") no-repeat center right 15px;
+    background-size: 32px;
+}
+.icon-amex {
+	padding-right: 25px;
+    background: url("/img/card-americanexpress.png") no-repeat center right 15px;
+    background-size: 32px;
+}
+.icon-elo {
+	padding-right: 25px;
+    background: url("/img/card-elo.png") no-repeat center right 15px;
+    background-size: 32px;
+}
+.icon-hiper {
+	padding-right: 25px;
+    background: url("/img/card-hipercard.png") no-repeat center right 15px;
+    background-size: 32px;
+}
